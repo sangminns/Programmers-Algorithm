@@ -13,7 +13,7 @@ int solution(string arrangement) {
         } else {
             if(!st.empty()) {
                 st.pop();
-                if(arrangement[i-1]=='(') {
+                if(arrangement[i-1]=='(') { // 괄호가 레이저인지 파이프의 끝인지 구별
                     answer += st.size();
                 } else {
                     answer++;
